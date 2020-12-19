@@ -1,0 +1,42 @@
+.navbar {
+    overflow: hidden;
+    background-color: cadetblue;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: darkcyan;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: darksalmon;
+    color: dodgerblue;
+}
+
+.navbar a.active {
+    background-color: lightblue;
+    color: lightseagreen;
+}
+
+.navbar input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 10px;
+    border-radius: 20%;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+}
