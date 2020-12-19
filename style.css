@@ -6,15 +6,128 @@
 body{
     background-color:#222222;
     font-family: 'Archivo', sans-serif;
+    color: #e4e4e4;
   }
   
+  p{
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+
+  q{
+    line-height: 2;
+    text-align: center;
+  }
+
+.mainSection img{
+  height: 80%;
+  margin: auto;
+  display: inline;
+  border-style: solid;
+
+}
+
+
+/* Artist Page */
+
+
+/* header */
+
+.header{
+  height: 15vh;
+  text-align: center;
+  /* border-style: solid; */
+}
+
+.header h1{
+  margin: auto;
+  padding-top: 15px;
+  text-shadow: 2px 2px #414040;
+}
+
+
+hr{
+  width: 30%;
+  margin: auto;
+  border: solid #044343;
+}
+
+
+.big-image{
+
+  overflow: hidden;
   
+}
+
+.big-image img{
+  width: 100%;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+
+}
+
+.card {
+  width: 40%;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+
+.card-quote{
+  width: 40%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.card h2{
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.card p{
+  text-align: justify;
+
+}
+
+.card img{
+  width: 90%;
+  text-align: center;
+  align-items: center;
+
+}
+
+.spotify{
+  align-content: right;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .card{
+    width: 80%;
+    margin: auto;
+  }
+}
+
   /* Navigation Bar  */
   
   .navBar {
+    height: 10vh;
     list-style-type: none;
     text-align: right;
-    padding: 7px;
+    padding: 20px;
   }
   
   .navBar li {
@@ -28,7 +141,7 @@ body{
     text-decoration: none;
     letter-spacing: 0.15em;
     font-weight: body;
-    color:white; 
+    color: #e4e4e4;
   }
   
   .navBar a:hover{
@@ -154,4 +267,54 @@ body{
 }
 .cards{
   margin-bottom: 50px;
+}
+.main-section {
+    width: 100%;
+}
+
+.main-section img {
+    width: 50%;
+    transform: translate(50%, -0.5%);
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/
+}
+.main-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.featured-musician img {
+    width: 50%;
+    padding: 10px;
+}
+
+.main-descript p {
+    color: floralwhite;
+}
+
+a.btn {
+    text-decoration: none;
+    margin: 0 0 20px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid #000000;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    width: 50%;
+    transform: translate(50%, -50%);
+}
+
+a.btn:hover {
+    background-color: black;
+    color: white;
 }
