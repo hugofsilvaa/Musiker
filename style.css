@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body{
     background-color:#222222;
     font-family: 'Archivo', sans-serif;
@@ -17,7 +22,6 @@ body{
     display: inline;
     
   }
-  
   .navBar a {
     cursor: pointer;
     text-transform: uppercase;
@@ -27,24 +31,16 @@ body{
     color:white; 
   }
   
-  
   .navBar a:hover{
   color: #045757;
   }
   
   
-  *{
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-}
+/* Footer  */
 
 .containerFooter{
-    position: absolute;
-    bottom: 10px;
+    justify-content: flex-end;
+    margin-bottom: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -66,7 +62,7 @@ body{
 
 .fa {
     width: 60px;
-    color: black;
+    color: #ffffff;
     text-decoration: none;
   }
   
@@ -75,7 +71,7 @@ body{
   }
 
   .verticalLine{
-    border-left: 1px solid #000000;
+    border-left: 1px solid #ffffff;
     height: 50px;
     margin: 30px;
   }
@@ -88,17 +84,19 @@ body{
 
   .newsletter p{
     text-transform: uppercase;
+    color: #ffffff;
   }
 
   .newsletter input{
     border: 1px solid #000000;
     border-radius: 20px;
     padding: 8px;
-    background: #ffffff;
+    background: #000000;
     letter-spacing: 3px;
     font-weight: 700;
     width: 100%;
     text-align: center;
+    color: #ffffff
 }
 
 .newsletter input:focus{
@@ -106,8 +104,8 @@ body{
 }
 
 .submitButton:hover {
-  background-color:#000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
   .copyright {
@@ -118,16 +116,42 @@ body{
     font-size: 0.7rem;
     line-height: 1.6;
     letter-spacing: 3px;
+    color: #ffffff;
   }
 
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
+
+/* Artist List  */
+
+  .header{
+    color: #ffffff;
+    text-align: center;
+    margin: 100px 0 100px;
+  }
+
+  .artist-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+  }
+
+  .cards{
+    width: 200px;
+  }
+
+  .cards img{
+    width: 100%;
+  }
+
+  .cards p{
+    margin-top: 10px;
+    color:#ffffff
+  }
+
+@media screen and (max-width: 400px) {
+  .artist-cards{
+    flex-wrap: wrap;
+    margin-bottom: 90px;
 }
-
-input:-webkit-autofill:focus {
-    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
-    -webkit-text-fill-color: #333;
-} 
-
--webkit-text-fill-color: #838B95 !important;
-
+.cards{
+  margin-bottom: 50px;
+}
