@@ -277,9 +277,6 @@ hr{
     transform: translate(50%, -0.5%);
 }
 
-input:-webkit-autofill:focus {
-    -webkit-box-shadow: /*your box-shadow*/
-}
 .main-container {
     display: flex;
     width: 100%;
