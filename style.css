@@ -32,13 +32,13 @@ body{
   height: 15vh;
   text-align: center;
   /* border-style: solid; */
-}
+ }
 
-.header h1{
+ .header h1{
   margin: auto;
   padding-top: 15px;
   text-shadow: 2px 2px #414040;
-}
+}  
 
 
 hr{
@@ -49,7 +49,6 @@ hr{
 
 
 .big-image{
-
   overflow: hidden;
   
 }
@@ -96,9 +95,41 @@ hr{
 
 }
 
-.spotify{
-  align-content: right;
+.image-six{
+  width: 30%;
+  text-align: center;
+  align-items: center;
 }
+.spotify{
+  justify-content: right;
+}
+
+
+/* about us page  */
+
+.header2{
+  overflow: hidden;
+  height: 50vh;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header2 img{
+  width: 100%;
+  opacity: 0.5;
+}
+
+.header2-h1{
+  text-shadow: 2px 2px #414040;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ;
+}
+
+
 
 @media (max-width: 900px) {
   .container {
@@ -142,7 +173,8 @@ hr{
   
   
   .navBar a:hover{
-  color: #045757;
+  /* color: #045757; */
+  opacity: 0.5;
   }
   
   
@@ -150,7 +182,8 @@ hr{
     margin: 0;
     box-sizing: border-box;
 }
-/* /* 
+
+
 /* footer */
 
 .containerFooter{
@@ -167,7 +200,7 @@ hr{
 }
 
 .horizontal hr{
-  border-top: 1px solid #000000;
+  border-top: 1px solid #e4e4e4;
   margin-bottom: 40px;
 }
 
@@ -176,8 +209,8 @@ hr{
 }
 
 .fa {
-    width: 60px;
-    color: black;
+    width: 50px;
+    color: #e4e4e4;
     text-decoration: none;
   }
   
@@ -217,8 +250,9 @@ hr{
 }
 
 .submitButton:hover {
-  background-color:#000000;
-  color: #ffffff;
+  /* background-color:#000000;
+  color: #ffffff; */
+  opacity: 0.5;
 }
 
   .copyright {
