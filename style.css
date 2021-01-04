@@ -24,7 +24,6 @@ body{
   margin: auto;
   display: inline;
   border-style: solid;
-
 }
 
 
@@ -49,7 +48,7 @@ body{
 hr{
   width: 30%;
   margin: auto;
-  border: solid #044343;
+  border: #044343;
 }
 
 
@@ -105,7 +104,7 @@ hr{
   align-content: right;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .container {
     flex-direction: column;
     justify-content: center;
@@ -114,12 +113,11 @@ hr{
   .flex-container {
     flex-direction: column;
   }
-
+}
   .card{
     width: 80%;
     margin: auto;
   }
-}
 
   /* Navigation Bar  */
   
@@ -152,21 +150,21 @@ hr{
 /* Footer  */
 
 .containerFooter{
-    justify-content: flex-end;
-    margin-bottom: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  justify-content: space-around;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .horizontal{
-  width: 30%;
+  width: 100%;
+  margin: auto;
 }
 
 .horizontal hr{
-  border-top: 1px solid #000000;
-  margin-bottom: 40px;
+  border-top: 1px solid #044343;
+  margin-bottom: 100px;
 }
 
 .socialMedia{
@@ -184,7 +182,7 @@ hr{
   }
 
   .verticalLine{
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid #044343;
     height: 50px;
     margin: 30px;
   }
@@ -197,19 +195,17 @@ hr{
 
   .newsletter p{
     text-transform: uppercase;
-    color: #ffffff;
   }
 
   .newsletter input{
-    border: 1px solid #000000;
     border-radius: 20px;
     padding: 8px;
-    background: #000000;
-    letter-spacing: 3px;
+    background: #ffffff;
+    letter-spacing: 1.5px;
     font-weight: 700;
     width: 100%;
     text-align: center;
-    color: #ffffff
+    transition: background-color 0.5s;
 }
 
 .newsletter input:focus{
@@ -217,8 +213,8 @@ hr{
 }
 
 .submitButton:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color:#000000;
+  color: #ffffff;
 }
 
   .copyright {
@@ -229,7 +225,6 @@ hr{
     font-size: 0.7rem;
     line-height: 1.6;
     letter-spacing: 3px;
-    color: #ffffff;
   }
 
 
@@ -260,14 +255,47 @@ hr{
     color:#ffffff
   }
 
-@media screen and (max-width: 400px) {
-  .artist-cards{
-    flex-wrap: wrap;
-    margin-bottom: 90px;
+  @media screen and (max-width: 900px) {
+    .artist-cards{
+      flex-wrap: wrap;
+      margin-bottom: 90px;
+    }
+    .cards{
+    margin-bottom: 50px;
+    }
+    
+    .containerFooter{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      bottom: 10px;
+      width: 100%;
+     }
+
+     .aboutUs{
+       flex-wrap: wrap;
+       margin: 30px;
+     }
+
+     .aboutUs_picture{
+       margin-bottom: 50px;
+     }
+
+     .formContainer form{
+       flex-wrap: wrap;
+       width: 90vw;
+     }
+
+     .formElements{
+      align-items: center;
+    }
+
+    .formContainer input[type="submit"]{
+      width: 60vw;
+    }
 }
-.cards{
-  margin-bottom: 50px;
-}
+
 .main-section {
     width: 100%;
 }
@@ -314,4 +342,92 @@ a.btn {
 a.btn:hover {
     background-color: black;
     color: white;
+}
+
+/* about us page */
+
+/* about us section */
+
+.aboutUs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.aboutUs_picture{
+  width: 500px;
+}
+
+.aboutUs_picture img{
+  width: 100%;
+}
+
+.aboutUs p{
+width: 500px;
+}
+
+
+
+/* about us contact form */
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0;
+
+}
+
+.formElements{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+label, input, textarea{
+  padding: 10px;
+}
+
+input, textarea{
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 8px;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+  overflow: auto;
+  font-size: 1.1rem;
+}
+
+.formContainer input[type="submit"]{
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1rem;
+  transition: background-color 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+input[type="submit"]:focus{
+  outline: 0;
+}
+
+input[type="submit"]:hover {
+  background-color:#000000;
+  color: #ffffff;
+} 
+
+ h3{
+  margin-top: -100px;
+  margin-bottom: 50px;
 }
