@@ -350,11 +350,12 @@ input[type="submit"]:hover {
 
 
 .containerFooter{
-  justify-content: space-around;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .horizontal{
@@ -382,7 +383,7 @@ input[type="submit"]:hover {
   }
 
   .verticalLine{
-    border-left: 1px solid #044343;
+    border-left: 1px solid #ffffff;
     height: 50px;
     margin: 30px;
   }
@@ -395,17 +396,18 @@ input[type="submit"]:hover {
 
   .newsletter p{
     text-transform: uppercase;
+    color: #ffffff;
   }
 
   .newsletter input{
     border-radius: 20px;
     padding: 8px;
-    background: #ffffff;
-    letter-spacing: 1.5px;
+    background: #000000;
+    letter-spacing: 3px;
     font-weight: 700;
     width: 100%;
     text-align: center;
-    transition: background-color 0.5s;
+    color: #ffffff
 }
 
 .newsletter input:focus{
@@ -413,8 +415,8 @@ input[type="submit"]:hover {
 }
 
 .submitButton:hover {
-  background-color:#000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
   .copyright {
@@ -425,6 +427,30 @@ input[type="submit"]:hover {
     font-size: 0.7rem;
     line-height: 1.6;
     letter-spacing: 3px;
+    color: #ffffff;
+  }
+
+
+/* Artist List  */
+
+  .header{
+    color: #ffffff;
+    text-align: center;
+    margin: 100px 0 100px;
+  }
+
+  .artist-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+  }
+
+  .cards{
+    width: 200px;
+  }
+
+  .cards img{
+    width: 100%;
   }
 
 
