@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body{
     background-color:#222222;
     font-family: 'Archivo', sans-serif;
@@ -161,7 +166,6 @@ hr{
     display: inline;
     
   }
-  
   .navBar a {
     cursor: pointer;
     text-transform: uppercase;
@@ -170,7 +174,6 @@ hr{
     font-weight: body;
     color: #e4e4e4;
   }
-  
   
   .navBar a:hover{
   /* color: #045757; */
@@ -188,7 +191,7 @@ hr{
 
 .containerFooter{
     justify-content: flex-end;
-    bottom: 10px;
+    margin-bottom: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -209,8 +212,8 @@ hr{
 }
 
 .fa {
-    width: 50px;
-    color: #e4e4e4;
+    width: 60px;
+    color: #ffffff;
     text-decoration: none;
   }
   
@@ -219,7 +222,7 @@ hr{
   }
 
   .verticalLine{
-    border-left: 1px solid #000000;
+    border-left: 1px solid #ffffff;
     height: 50px;
     margin: 30px;
   }
@@ -232,17 +235,19 @@ hr{
 
   .newsletter p{
     text-transform: uppercase;
+    color: #ffffff;
   }
 
   .newsletter input{
     border: 1px solid #000000;
     border-radius: 20px;
     padding: 8px;
-    background: #ffffff;
+    background: #000000;
     letter-spacing: 3px;
     font-weight: 700;
     width: 100%;
     text-align: center;
+    color: #ffffff
 }
 
 .newsletter input:focus{
@@ -250,9 +255,8 @@ hr{
 }
 
 .submitButton:hover {
-  /* background-color:#000000;
-  color: #ffffff; */
-  opacity: 0.5;
+  background-color: #ffffff;
+  color: #000000;
 }
 
   .copyright {
@@ -263,8 +267,45 @@ hr{
     font-size: 0.7rem;
     line-height: 1.6;
     letter-spacing: 3px;
+    color: #ffffff;
   }
 
+
+/* Artist List  */
+
+  .header{
+    color: #ffffff;
+    text-align: center;
+    margin: 100px 0 100px;
+  }
+
+  .artist-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+  }
+
+  .cards{
+    width: 200px;
+  }
+
+  .cards img{
+    width: 100%;
+  }
+
+  .cards p{
+    margin-top: 10px;
+    color:#ffffff
+  }
+
+@media screen and (max-width: 400px) {
+  .artist-cards{
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+.cards{
+  margin-bottom: 50px;
+}
 .main-section {
     width: 100%;
 }
@@ -274,9 +315,6 @@ hr{
     transform: translate(50%, -0.5%);
 }
 
-input:-webkit-autofill:focus {
-    -webkit-box-shadow: /*your box-shadow*/
-}
 .main-container {
     display: flex;
     width: 100%;
