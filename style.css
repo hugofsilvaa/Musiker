@@ -27,21 +27,54 @@ body{
 
 }
 
+/* .two{
+  background-color: white;
+  color:#414040
+} */
+
+/* Home page  */
+
+
+.header-home{
+  margin-top: 20px;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.header-home img{
+  align-items:stretch;
+  width: 100%;
+}
+
+.intro{
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+
+.intro h3{
+  size: 2rem;
+  margin-top:30px;
+}
+
 
 /* Artist Page */
 
 
 /* header */
 
-.header{
-  height: 15vh;
+.header-artistpage{
+  height: 20vh;
   text-align: center;
   /* border-style: solid; */
  }
 
- .header h1{
+ .header-artistpage h1{
   margin: auto;
-  padding-top: 15px;
+  padding-top: 50px;
   text-shadow: 2px 2px #414040;
 }  
 
@@ -112,28 +145,92 @@ hr{
 
 /* about us page  */
 
-.header2{
+.header-aboutus{
+  margin-top: 20px;
   overflow: hidden;
-  height: 50vh;
+  height: 70vh;
   position: relative;
   text-align: center;
   color: white;
 }
 
-.header2 img{
+.header-aboutus img{
   width: 100%;
   opacity: 0.5;
 }
 
-.header2-h1{
+.header-aboutus-h1{
   text-shadow: 2px 2px #414040;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  ;
+  font-size: 2rem;
 }
 
+
+/* Contact form  */
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0;
+
+}
+
+.formElements{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+label, input, textarea{
+  padding: 10px;
+}
+
+input, textarea{
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 8px;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+  overflow: auto;
+  font-size: 1.1rem;
+}
+
+.formContainer input[type="submit"]{
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1rem;
+  transition: background-color 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+input[type="submit"]:focus{
+  outline: 0;
+}
+
+input[type="submit"]:hover {
+  background-color:#000000;
+  color: #ffffff;
+} 
+
+ h3{
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
 
 
 @media (max-width: 900px) {
@@ -155,17 +252,22 @@ hr{
   /* Navigation Bar  */
   
   .navBar {
-    height: 10vh;
+    height: 15vh;
     list-style-type: none;
     text-align: right;
-    padding: 20px;
+    padding: 30px;
   }
   
   .navBar li {
     padding: 10px;
     display: inline;
-    
+    float: right;
   }
+
+  .navBar li:first-child{
+    float:left;
+  }
+
   .navBar a {
     cursor: pointer;
     text-transform: uppercase;
@@ -176,39 +278,93 @@ hr{
   }
   
   .navBar a:hover{
-  /* color: #045757; */
   opacity: 0.5;
   }
   
-  
-<<<<<<< HEAD
-  *{
-    margin: 0;
-    box-sizing: border-box;
+/* dropdown  */
+
+.dropdown {
+  overflow: hidden;
+  float: right;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  background-color: inherit;
+  font-family: inherit;
 }
 
 
-/* footer */
-=======
+.dropdown-content {
+  display: none;
+  position: absolute;
+  float: right;
+  background-color: #333333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 12px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #e4e4e4;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  opacity: 0.25;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+   /* logo  */
+  .logo{
+    display: inline;
+    position: relative;
+    font: 2rem Helvetica, sans-serif;
+    letter-spacing: -1.5;
+    color: rgba(0,0,255,0.5);
+    overflow: hidden;
+  }
+  
+  .logo:after{
+    content: "Musiker";
+    position:absolute; left: 3px; top: 2px;
+    color:#044343;
+    overflow: hidden;
+    
+  }
 /* Footer  */
->>>>>>> 214d703b6c022b01b130e914d4f84f3cab18512c
+/
 
 .containerFooter{
-    justify-content: flex-end;
-    margin-bottom: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  justify-content: space-around;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .horizontal{
-  width: 30%;
+  width: 100%;
+  margin: auto;
 }
 
 .horizontal hr{
-  border-top: 1px solid #e4e4e4;
-  margin-bottom: 40px;
+  border-top: 1px solid #044343;
+  margin-bottom: 100px;
 }
 
 .socialMedia{
@@ -216,13 +372,8 @@ hr{
 }
 
 .fa {
-<<<<<<< HEAD
-    width: 50px;
-    color: #e4e4e4;
-=======
     width: 60px;
     color: #ffffff;
->>>>>>> 214d703b6c022b01b130e914d4f84f3cab18512c
     text-decoration: none;
   }
   
@@ -231,7 +382,7 @@ hr{
   }
 
   .verticalLine{
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid #044343;
     height: 50px;
     margin: 30px;
   }
@@ -244,19 +395,17 @@ hr{
 
   .newsletter p{
     text-transform: uppercase;
-    color: #ffffff;
   }
 
   .newsletter input{
-    border: 1px solid #000000;
     border-radius: 20px;
     padding: 8px;
-    background: #000000;
-    letter-spacing: 3px;
+    background: #ffffff;
+    letter-spacing: 1.5px;
     font-weight: 700;
     width: 100%;
     text-align: center;
-    color: #ffffff
+    transition: background-color 0.5s;
 }
 
 .newsletter input:focus{
@@ -264,14 +413,8 @@ hr{
 }
 
 .submitButton:hover {
-<<<<<<< HEAD
-  /* background-color:#000000;
-  color: #ffffff; */
-  opacity: 0.5;
-=======
-  background-color: #ffffff;
-  color: #000000;
->>>>>>> 214d703b6c022b01b130e914d4f84f3cab18512c
+  background-color:#000000;
+  color: #ffffff;
 }
 
   .copyright {
@@ -282,7 +425,6 @@ hr{
     font-size: 0.7rem;
     line-height: 1.6;
     letter-spacing: 3px;
-    color: #ffffff;
   }
 
 
