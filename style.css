@@ -24,7 +24,6 @@ body{
   margin: auto;
   display: inline;
   border-style: solid;
-
 }
 
 /* .two{
@@ -70,23 +69,24 @@ body{
   height: 20vh;
   text-align: center;
   /* border-style: solid; */
- }
+}
 
- .header-artistpage h1{
+.header h1{
   margin: auto;
   padding-top: 50px;
   text-shadow: 2px 2px #414040;
-}  
+}
 
 
 hr{
   width: 30%;
   margin: auto;
-  border: solid #044343;
+  border: #044343;
 }
 
 
 .big-image{
+
   overflow: hidden;
   
 }
@@ -133,11 +133,6 @@ hr{
 
 }
 
-.image-six{
-  width: 30%;
-  text-align: center;
-  align-items: center;
-}
 .spotify{
   justify-content: right;
 }
@@ -233,7 +228,11 @@ input[type="submit"]:hover {
 }
 
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
+  align-content: right;
+} */
+
+@media screen and (max-width: 900px) {
   .container {
     flex-direction: column;
     justify-content: center;
@@ -242,12 +241,11 @@ input[type="submit"]:hover {
   .flex-container {
     flex-direction: column;
   }
-
+}
   .card{
     width: 80%;
     margin: auto;
   }
-}
 
   /* Navigation Bar  */
   
@@ -346,16 +344,16 @@ input[type="submit"]:hover {
     overflow: hidden;
     
   }
-/* Footer  */
-
+  
+  
+/* FOOTER  */
 
 .containerFooter{
-    justify-content: flex-end;
-    margin-bottom: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  justify-content: space-around;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .horizontal{
@@ -383,7 +381,7 @@ input[type="submit"]:hover {
   }
 
   .verticalLine{
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid #044343;
     height: 50px;
     margin: 30px;
   }
@@ -396,18 +394,17 @@ input[type="submit"]:hover {
 
   .newsletter p{
     text-transform: uppercase;
-    color: #ffffff;
   }
 
   .newsletter input{
     border-radius: 20px;
     padding: 8px;
-    background: #000000;
-    letter-spacing: 3px;
+    background: #ffffff;
+    letter-spacing: 1.5px;
     font-weight: 700;
     width: 100%;
     text-align: center;
-    color: #ffffff
+    transition: background-color 0.5s;
 }
 
 .newsletter input:focus{
@@ -415,8 +412,8 @@ input[type="submit"]:hover {
 }
 
 .submitButton:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color:#000000;
+  color: #ffffff;
 }
 
   .copyright {
@@ -427,11 +424,10 @@ input[type="submit"]:hover {
     font-size: 0.7rem;
     line-height: 1.6;
     letter-spacing: 3px;
-    color: #ffffff;
   }
 
 
-/* Artist List  */
+/* ARTIST LIST PAGE  */
 
   .header{
     color: #ffffff;
@@ -481,14 +477,49 @@ input[type="submit"]:hover {
     color:#ffffff
   }
 
-@media screen and (max-width: 400px) {
-  .artist-cards{
-    flex-wrap: wrap;
-    margin-bottom: 90px;
+  @media screen and (max-width: 900px) {
+    .artist-cards{
+      flex-wrap: wrap;
+      margin-bottom: 90px;
+    }
+    .cards{
+    margin-bottom: 50px;
+    }
+    
+    .containerFooter{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      bottom: 10px;
+      width: 100%;
+     }
+
+     /* .aboutUs{
+       flex-wrap: wrap;
+       margin: 30px;
+     }
+
+     .aboutUs_picture{
+       margin-bottom: 50px;
+     } */
+
+     .formContainer form{
+       flex-wrap: wrap;
+       width: 90vw;
+     }
+
+     .formElements{
+      align-items: center;
+    }
+
+    .formContainer input[type="submit"]{
+      width: 60vw;
+    }
 }
-.cards{
-  margin-bottom: 50px;
-}
+
+/* Home Page */
+
 .main-section {
     width: 100%;
 }
@@ -535,4 +566,92 @@ a.btn {
 a.btn:hover {
     background-color: black;
     color: white;
+}
+
+/* ABOUT US PAGE */
+
+/* ABOUT US SECTION TO DELETE */
+
+/* .aboutUs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.aboutUs_picture{
+  width: 500px;
+}
+
+.aboutUs_picture img{
+  width: 100%;
+}
+
+.aboutUs p{
+width: 500px;
+}
+
+ */
+
+/* ABOUT US CONTACT FORM */
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0;
+
+}
+
+.formElements{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+label, input, textarea{
+  padding: 10px;
+}
+
+input, textarea{
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 8px;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+  overflow: auto;
+  font-size: 1.1rem;
+}
+
+.formContainer input[type="submit"]{
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1rem;
+  transition: background-color 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+input[type="submit"]:focus{
+  outline: 0;
+}
+
+input[type="submit"]:hover {
+  background-color:#000000;
+  color: #ffffff;
+} 
+
+ h3{
+  margin-top: -100px;
+  margin-bottom: 50px;
 }
