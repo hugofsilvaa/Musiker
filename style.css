@@ -147,7 +147,7 @@ hr{
   }
   
   
-/* Footer  */
+/* FOOTER SECTION  */
 
 .containerFooter{
   justify-content: space-around;
@@ -228,7 +228,7 @@ hr{
   }
 
 
-/* Artist List  */
+/* ARTIST LIST PAGE  */
 
   .header{
     color: #ffffff;
@@ -273,14 +273,14 @@ hr{
       width: 100%;
      }
 
-     .aboutUs{
+     /* .aboutUs{
        flex-wrap: wrap;
        margin: 30px;
      }
 
      .aboutUs_picture{
        margin-bottom: 50px;
-     }
+     } */
 
      .formContainer form{
        flex-wrap: wrap;
@@ -295,6 +295,8 @@ hr{
       width: 60vw;
     }
 }
+
+/* Home Page */
 
 .main-section {
     width: 100%;
@@ -344,11 +346,11 @@ a.btn:hover {
     color: white;
 }
 
-/* about us page */
+/* ABOUT US PAGE */
 
-/* about us section */
+/* ABOUT US SECTION TO DELETE */
 
-.aboutUs{
+/* .aboutUs{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -367,9 +369,9 @@ a.btn:hover {
 width: 500px;
 }
 
+ */
 
-
-/* about us contact form */
+/* ABOUT US CONTACT FORM */
 
 .formContainer{
   display: flex;
