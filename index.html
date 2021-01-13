@@ -10,61 +10,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Static Template</title>
 </head>
 
 <body>
     <nav class="navBar">
         <ul class>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artist-page.html">Artists</a></li>
+            <li><a class="logo" href="index.html">Musiker</a></li>
             <li><a href="about-us.html">About Us</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/artistList.html">Artists</a>
+                <!-- <i class="fa fa-caret-down"></i> -->
+                 </button>
+                     <div class="dropdown-content">
+                     <a href="/artist-page.html">Glass Animals</a>
+                     <a href="/artist-page.html">The Strumbellas</a>
+                     <a href="/artistList.html">and more...</a>
+                    </div>
+            </div> 
         </ul>
     </nav>
 
-    <h1></h1>
+  <!-- main  -->
+  
+<!--  header  -->
+  
 
-    <div class="mainSection">
-        <img src="img/NS-WKMAG0730-1595944356.jpg" alt="">
+
+    <div class="header-home">
+        <img src="img/one-2.jpeg" alt="">
+     </div>
+
+     <!-- main  -->
+    <div class="intro">
+        <h1>Hi, Welcome to Musiker!</h1>
+        <h3>Your new favourite platform to discover emerging artists and groups.</h3>
     </div>
 
-    <!-- <footer class="containerFooter">
-    <div class="main-container">
-        <div class="featured-musician">
-            <img src="img/musician.jpg" alt="">
+    <a class="fas fa-arrow-down"></a>
+      
+    <div class="flex-container one">
+        
+        <div class="card">
+           <h2>We've got you sorted.</h2>
+            <p> Yes, we know. Nowadays, it's hard to navigate the music business. 
+                <br> <br>
+                Between the multitude of sites, music streaming platforms and social media, it's becoming difficult to get noticed and stand out there.
+                <br> <br>
+                But have no fear. We've decided to make it easy for you! So Musiker was born, a platform to promote emerging artists. 
+                <br> <br>
+                New bands and artists are promoted every week, with interviews and various content.
+                </p>
         </div>
-        <div class="main-descript">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, veniam?</p>
+        <div class="card">
+            <img class="" src="/img/maaria-lohiya-LhWr3yGGC6k-unsplash (1).jpg" alt="">
+            </div>
         </div>
     </div>
 
-    <a href="" class="btn">Show more</a>
-
-    <footer class="containerFooter">
-
-        <div class="horizontal">
-            <hr>
+    <div class="flex-container">
+        <div class="card">
+            <img class="" src="/img/fourteen (3).jpg" alt="">
         </div>
 
-        <div class="socialMedia">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-twitter"></a>
+        <div class="card">
+           <h2>This week discovery</h2>
+            <p> The music from this rock band has been described as alternative country, indie rock, and gothic folk. Originally from Canada
+            </p>
         </div>
+    </div>
 
-        <div class="verticalLine"></div>
+<!-- Footer -->
+<!-- 
+<footer class="containerFooter">
 
-        <div class="newsletter">
-            <p>subscribe our newsletter</p><br>
-            <input class="email" type="email" id="email" name="email" placeholder="NAME@EMAIL.COM"><br><br>
-            <input class="submitButton" type="submit" value="SUBSCRIBE">
-        </div>
+    <div class="socialMedia">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </div>
 
-        <div class="copyright">
-            <p>2020 &copy; all rights reserved </p>
-        </div>
-    </footer> -->
+    <div class="verticalLine"></div>
+
+    <div class="newsletter">
+        <p>subscribe our newsletter</p><br>
+        <input class="email" type="email" id="email" name="email" placeholder="NAME@EMAIL.COM"><br><br>
+        <input class="submitButton" type="submit" value="SUBSCRIBE">
+    </div>
+
+</footer>
+<div class="copyright">
+    <p>2020 &copy; all rights reserved </p>
+</div> -->
+
+
 </body>
 
 </html>
