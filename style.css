@@ -12,6 +12,7 @@ body{
   p{
     font-family: sans-serif;
     line-height: 1.5;
+    font-size: 1.2rem;
   }
 
   q{
@@ -23,14 +24,7 @@ body{
   height: 80%;
   margin: auto;
   display: inline;
-  border-style: solid;
-
 }
-
-/* .two{
-  background-color: white;
-  color:#414040
-} */
 
 /* Home page  */
 
@@ -50,14 +44,18 @@ body{
   height: 80vh;
   width: 80%;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  /* padding-top: 50px;
+  padding-bottom: 30px; */
 }
 
+.intro h1{
+  padding-top: 15%;
+  font-size: 3.5rem;
+}
 
 .intro h3{
-  size: 2rem;
-  margin-top:30px;
+  font-size: 2rem;
+  margin-top:10%;
 }
 
 
@@ -67,28 +65,22 @@ body{
 /* header */
 
 .header-artistpage{
-  height: 20vh;
+  /* height: 20vh; */
   text-align: center;
-  /* border-style: solid; */
  }
 
  .header-artistpage h1{
   margin: auto;
-  padding-top: 50px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-shadow: 2px 2px #414040;
+  font-size: 3.5rem;
 }  
-
-
-hr{
-  width: 30%;
-  margin: auto;
-  border: solid #044343;
-}
 
 
 .big-image{
   overflow: hidden;
-  
+  width: 100%;
 }
 
 .big-image img{
@@ -99,8 +91,10 @@ hr{
   display: flex;
   justify-content: center;
   align-items: flex-start; 
-
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+
 
 .card {
   width: 40%;
@@ -110,15 +104,20 @@ hr{
 
 
 .card-quote{
-  width: 40%;
+  width: 60%;
   margin: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5%;
+  padding-bottom:5%;
+}
+
+q{
+  font-size: 2rem;;
 }
 
 .card h2{
+  font-size: 2rem;;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .card p{
@@ -234,6 +233,10 @@ input[type="submit"]:hover {
 
 
 @media (max-width: 900px) {
+
+  .header-home{
+    height: 30vh;
+  }
   .container {
     flex-direction: column;
     justify-content: center;
