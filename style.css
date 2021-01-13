@@ -243,16 +243,18 @@ hr{
   }
 
   .cards{
-    width: 200px;
+    width: 350px;
   }
 
   .cards img{
     width: 100%;
+    height: 250px;
   }
 
   .cards p{
-    margin-top: 10px;
-    color:#ffffff
+    margin-top: 20px;
+    color:#ffffff;
+    
   }
 
   @media screen and (max-width: 900px) {
