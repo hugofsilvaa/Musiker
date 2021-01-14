@@ -15,25 +15,32 @@
 
 <body>
 
-    <!-- nav bar -->
-    <nav class="navBar">
-        <ul class>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artist-page.html">Artists</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </nav>
 
+
+    
+    <nav class="navBar" id="myTopnav">
+        <ul class>
+            <li><a class="logo active" href="index.html">Musiker</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/artistList.html">Artists</a>
+                <i class="fa fa-caret-down"></i>
+                 </button>
+                     <div class="dropdown-content">
+                     <a href="/artist-page.html">Glass Animals</a>
+                     <a href="/artist-page.html">The Strumbellas</a>
+                     <a href="/artistList.html">and more...</a>
+                    </div>
+            </div> 
+        </ul>
+    </nav> 
 
 
 
      <!-- header -->
 
-     <div class="header2">
-        <img src="/img/one.jpg" alt="">
-            <div class="header2-h1">
-                <h1>WE ARE MUSIC LOVERS</h1>
-            </div>
+     <div class="header-aboutus">
+        <img src="/img/fourteen.jpg" alt="">
      </div>
  
      <!-- main  -->
@@ -53,12 +60,7 @@
     </div>
 
   <!-- Contact form  -->
-    
-  <div class="horizontal">
-    <hr>
-</div>
-
-<section class="formContainer">
+  <section class="formContainer">
 
     <h3>Drop us a Message</h3>
 
@@ -77,14 +79,14 @@
 
 </section>
 
-        
-<!-- footer -->
+<div class="horizontal">
+    <hr>
+</div>
+
+<!-- Footer -->
+
 
     <footer class="containerFooter">
-
-        <div class="horizontal">
-            <hr>
-        </div>
 
         <div class="socialMedia">
             <a href="#" class="fa fa-facebook"></a>
@@ -101,10 +103,10 @@
             <input class="submitButton" type="submit" value="SUBSCRIBE">
         </div>
 
-        <div class="copyright">
-            <p>2020 &copy; all rights reserved </p>
-        </div>
     </footer>
+    <div class="copyright">
+        <p>2020 &copy; all rights reserved </p>
+    </div>
 </body>
 
 </html>
