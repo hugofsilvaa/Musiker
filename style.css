@@ -66,9 +66,8 @@ body{
 /* header */
 
 .header-artistpage{
-  /* height: 20vh; */
+  height: 20vh;
   text-align: center;
-  /* border-style: solid; */
 }
 
 .header h1{
@@ -89,12 +88,23 @@ hr{
   width: 100%;
 }
 
+.big-image img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
 .flex-container{
   display: flex;
   justify-content: center;
   align-items: flex-start; 
   padding-top: 5%;
   padding-bottom: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 
