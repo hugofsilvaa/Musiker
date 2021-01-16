@@ -28,7 +28,7 @@
                  </button>
                      <div class="dropdown-content">
                      <a href="/artist-page.html">Glass Animals</a>
-                     <a href="/artist-page.html">The Strumbellas</a>
+                     <a href="/artist-page.html">Arcade Fire</a>
                      <a href="/artistList.html">and more...</a>
                     </div>
             </div> 
@@ -60,6 +60,10 @@
     </div>
 
   <!-- Contact form  -->
+  <div class="horizontal">
+    <hr>
+</div>
+
   <section class="formContainer">
 
     <h3>Drop us a Message</h3>
@@ -74,7 +78,7 @@
         <label for="message">Your message</label>
         <textarea id="message" name="message"></textarea>
 
-        <input type="submit" value="Send your message!" />
+        <input id="submitFormButton" type="submit" value="Send your message!" />
     </form>
 
 </section>
@@ -100,13 +104,16 @@
         <div class="newsletter">
             <p>subscribe our newsletter</p><br>
             <input class="email" type="email" id="email" name="email" placeholder="NAME@EMAIL.COM"><br><br>
-            <input class="submitButton" type="submit" value="SUBSCRIBE">
+            <input class="submitButton" id="submitNewsletter" type="submit" value="SUBSCRIBE">
         </div>
 
     </footer>
     <div class="copyright">
         <p>2020 &copy; all rights reserved </p>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
