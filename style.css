@@ -12,6 +12,7 @@ body{
   p{
     font-family: sans-serif;
     line-height: 1.5;
+    font-size: 1.2rem;
   }
 
   q{
@@ -26,24 +27,56 @@ body{
   border-style: solid;
 }
 
+/* Home page  */
+
+
+.header-home{
+  margin-top: 20px;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.header-home img{
+  align-items:stretch;
+  width: 100%;
+}
+
+.intro{
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  /* padding-top: 50px;
+  padding-bottom: 30px; */
+}
+
+.intro h1{
+  padding-top: 15%;
+  font-size: 3.5rem;
+}
+
+.intro h3{
+  font-size: 2rem;
+  margin-top:10%;
+}
+
 
 /* Artist Page */
 
 
 /* header */
 
-.header{
-  height: 15vh;
+.header-artistpage{
+  /* height: 20vh; */
   text-align: center;
   /* border-style: solid; */
 }
 
 .header h1{
   margin: auto;
-  padding-top: 15px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-shadow: 2px 2px #414040;
 }
-
 
 hr{
   width: 30%;
@@ -53,12 +86,6 @@ hr{
 
 
 .big-image{
-
-  overflow: hidden;
-  
-}
-
-.big-image img{
   width: 100%;
 }
 
@@ -66,8 +93,10 @@ hr{
   display: flex;
   justify-content: center;
   align-items: flex-start; 
-
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+
 
 .card {
   width: 40%;
@@ -77,15 +106,20 @@ hr{
 
 
 .card-quote{
-  width: 40%;
+  width: 60%;
   margin: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5%;
+  padding-bottom:5%;
+}
+
+q{
+  font-size: 2rem;;
 }
 
 .card h2{
+  font-size: 2rem;;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .card p{
@@ -101,10 +135,109 @@ hr{
 }
 
 .spotify{
-  align-content: right;
+  justify-content: right;
 }
 
+
+/* about us page  */
+
+.header-aboutus{
+  margin-top: 20px;
+  overflow: hidden;
+  height: 70vh;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header-aboutus img{
+  width: 100%;
+  opacity: 0.5;
+}
+
+.header-aboutus-h1{
+  text-shadow: 2px 2px #414040;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+
+/* Contact form  */
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0;
+
+}
+
+.formElements{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+label, input, textarea{
+  padding: 10px;
+}
+
+input, textarea{
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 8px;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+  overflow: auto;
+  font-size: 1.1rem;
+}
+
+.formContainer input[type="submit"]{
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1rem;
+  transition: background-color 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+input[type="submit"]:focus{
+  outline: 0;
+}
+
+input[type="submit"]:hover {
+  background-color:#000000;
+  color: #ffffff;
+} 
+
+ h3{
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+
+/* @media (max-width: 900px) {
+  align-content: right;
+} */
+
 @media screen and (max-width: 900px) {
+
+  .header-home{
+    height: 30vh;
+  }
   .container {
     flex-direction: column;
     justify-content: center;
@@ -122,17 +255,22 @@ hr{
   /* Navigation Bar  */
   
   .navBar {
-    height: 10vh;
+    height: 15vh;
     list-style-type: none;
     text-align: right;
-    padding: 20px;
+    padding: 30px;
   }
   
   .navBar li {
     padding: 10px;
     display: inline;
-    
+    float: right;
   }
+
+  .navBar li:first-child{
+    float:left;
+  }
+
   .navBar a {
     cursor: pointer;
     text-transform: uppercase;
@@ -143,7 +281,73 @@ hr{
   }
   
   .navBar a:hover{
-  color: #045757;
+  opacity: 0.5;
+  }
+  
+/* dropdown  */
+
+.dropdown {
+  overflow: hidden;
+  float: right;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  float: right;
+  background-color: #333333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 12px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #e4e4e4;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  opacity: 0.25;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+   /* logo  */
+  .logo{
+    display: inline;
+    position: relative;
+    font: 2rem Helvetica, sans-serif;
+    letter-spacing: -1.5;
+    color: rgba(0,0,255,0.5);
+    overflow: hidden;
+  }
+  
+  .logo:after{
+    content: "Musiker";
+    position:absolute; left: 3px; top: 2px;
+    color:#044343;
+    overflow: hidden;
+    
   }
   
   
@@ -251,10 +455,12 @@ hr{
     height: 250px;
   }
 
+
+/* Artist List  */
+
   .cards p{
     margin-top: 20px;
     color:#ffffff;
-    
   }
 
   @media screen and (max-width: 900px) {
@@ -274,15 +480,6 @@ hr{
       bottom: 10px;
       width: 100%;
      }
-
-     /* .aboutUs{
-       flex-wrap: wrap;
-       margin: 30px;
-     }
-
-     .aboutUs_picture{
-       margin-bottom: 50px;
-     } */
 
      .formContainer form{
        flex-wrap: wrap;
@@ -348,30 +545,6 @@ a.btn:hover {
     color: white;
 }
 
-/* ABOUT US PAGE */
-
-/* ABOUT US SECTION TO DELETE */
-
-/* .aboutUs{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 150px;
-}
-
-.aboutUs_picture{
-  width: 500px;
-}
-
-.aboutUs_picture img{
-  width: 100%;
-}
-
-.aboutUs p{
-width: 500px;
-}
-
- */
 
 /* ABOUT US CONTACT FORM */
 
@@ -430,8 +603,3 @@ input[type="submit"]:hover {
   background-color:#000000;
   color: #ffffff;
 } 
-
- h3{
-  margin-top: -100px;
-  margin-bottom: 50px;
-}

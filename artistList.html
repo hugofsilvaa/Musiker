@@ -15,9 +15,18 @@
 <body>
     <nav class="navBar">
         <ul class>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artistList.html">Artists</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a class="logo" href="index.html">Musiker</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/artistList.html">Artists</a>
+                <!-- <i class="fa fa-caret-down"></i> -->
+                 </button>
+                     <div class="dropdown-content">
+                     <a href="/artist-page.html">Glass Animals</a>
+                     <a href="/artist-page.html">Arcade Fire</a>
+                     <a href="/artistList.html">and more...</a>
+                    </div>
+            </div> 
         </ul>
     </nav>
 
@@ -33,7 +42,7 @@
 
     <div class="cards">
         <div class="artistPhoto">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Arcade_Fire_%2827463874647%29.jpg/440px-Arcade_Fire_%2827463874647%29.jpg" alt="artist x"></a>
+            <a href="artist-page.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Arcade_Fire_%2827463874647%29.jpg/440px-Arcade_Fire_%2827463874647%29.jpg" alt="artist x"></a>
         </div>
         <p>Arcade Fire is a Canadian indie rock band, consisting of husband and wife Win Butler and Régine Chassagne, along with Win's younger brother William Butler, Richard Reed Parry, Tim Kingsbury and Jeremy Gara. The band's current touring line-up also includes former core member Sarah Neufeld, percussionist Tiwill Duprate and saxophonist Stuart Bogie.</p>
     </div>
@@ -50,9 +59,9 @@
 <section class="artist-cards">
     <div class="cards">
         <div class="artistPhoto">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/PlaceboBologna2009.jpg/440px-PlaceboBologna2009.jpg" alt="artist x"></a>
+            <a href="artist-page.html"><img src="https://pbs.twimg.com/media/Erm0BZXXIAUgOfU.jpg" alt="artist x"></a>
         </div>
-        <p>Placebo are an English rock band, formed in London in 1994 by vocalist–guitarist Brian Molko and bassist–guitarist Stefan Olsdal. Drummer Robert Schultzberg joined in late 1994, but left in 1996 shortly after the release of the band's eponymous debut album due to conflicts with Molko, and was replaced the same year by Steve Hewitt.</p>
+        <p>Glass Animals are an English psychedelic pop band formed in Oxford in 2010. Led by singer, songwriter, and producer Dave Bayley, the group also features his childhood friends Joe Seaward, Ed Irwin-Singer and Drew MacFarlane. Bayley wrote and produced all three Glass Animals albums. The first, Zaba (2014), spawned the single "Gooey", which was eventually certified platinum in the United States.</p>
     </div>
 
     <div class="cards">
@@ -91,13 +100,16 @@
         <div class="newsletter">
             <p>subscribe our newsletter</p><br>
             <input class="email" type="email" id="email" name="email" placeholder="NAME@EMAIL.COM"><br><br>
-            <input class="submitButton" type="submit" value="SUBSCRIBE">
+            <input class="submitButton" id="submitNewsletter" type="submit" value="SUBSCRIBE">
         </div>
 
     </footer>
+
     <div class="copyright">
         <p>2020 &copy; all rights reserved </p>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
