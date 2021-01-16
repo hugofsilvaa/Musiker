@@ -18,32 +18,40 @@
     <!-- nav bar -->
     <nav class="navBar">
         <ul class>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a class="logo" href="index.html">Musiker</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/artistList.html">Artists</a>
+                 </button>
+                     <div class="dropdown-content">
+                     <a href="/artist-page.html">Glass Animals</a>
+                     <a href="/artist-page.html">The Strumbellas</a>
+                     <a href="/artistList.html">and more...</a>
+                    </div>
+            </div> 
         </ul>
     </nav>
+     <!-- header -->
 
-    <!-- header -->
-
-    <div class="header">
-        <h1>THE NAME OF THE BAND</h1>
-    </div>
-    
-    <!-- <hr> -->
+ 
+   
 <div class="big-image">
-
     <img src="img/tenx.jpg" alt="">
 </div>
+ 
+<div class="header-artistpage">
+    <h1>GLASS ANIMALS</h1>
+</div> 
+
 
     <!-- Cards -->
 
-    <div class="flex-container">
+    <div class="flex-container two">
         <div class="card">
             <img src="img/four.jpg" alt="">
         </div>
         <div class="card">
-            <h2>Title </h2>
+            <h2>The Band </h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             </div>
@@ -51,31 +59,27 @@
     </div>
     <div class="card-quote">
         <q>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-
-        </q>
-     </div>
+           I feel like we have done the best. We've achived what we set out to do: that's the thing that I am proud of.</div>
 
     <div class="flex-container">
         <div class="card">
-            <h2>The Band Name </h2>
+            <h2>How it all started </h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             
             </p>
         </div>
         <div class="card">
-            <img src="img/six.jpg" alt="">
+            <img class="image-six" src="img/six.jpg" alt="">
             </div>
         </div>
     </div>
 
-    <div class="flex-container">
+    <div class="flex-container two">
 
         <div class="card">
             <iframe class="spotify" src="https://open.spotify.com/embed/artist/4yvcSjfu4PC0CYQyLy4wSq" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
+         </div>
 
         <div class="card">
             <h2>Top 10 Songs </h2>
@@ -86,34 +90,44 @@
     </div>
 
     
-        
-<!-- footer -->
 
-    <footer class="containerFooter">
+<!-- Footer -->
 
-        <div class="horizontal">
-            <hr>
-        </div>
 
-        <div class="socialMedia">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-twitter"></a>
-        </div>
+<footer class="containerFooter">
 
-        <div class="verticalLine"></div>
+    <div class="socialMedia">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </div>
 
-        <div class="newsletter">
-            <p>subscribe our newsletter</p><br>
-            <input class="email" type="email" id="email" name="email" placeholder="NAME@EMAIL.COM"><br><br>
-            <input class="submitButton" type="submit" value="SUBSCRIBE">
-        </div>
+    <div class="verticalLine"></div>
 
-        <div class="copyright">
-            <p>2020 &copy; all rights reserved </p>
-        </div>
-    </footer>
+    <div class="newsletter">
+        <p>subscribe our newsletter</p><br>
+        <input class="email" type="email" id="email" name="email" placeholder="NAME@EMAIL.COM"><br><br>
+        <input class="submitButton" type="submit" value="SUBSCRIBE">
+    </div>
+
+</footer>
+<div class="copyright">
+    <p>2020 &copy; all rights reserved </p>
+</div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "navBar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navBar";
+          }
+        }
+        </script>
+
+
 </body>
 
 </html>

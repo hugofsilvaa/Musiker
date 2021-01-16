@@ -15,9 +15,18 @@
 <body>
     <nav class="navBar">
         <ul class>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artistList.html">Artists</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a class="logo" href="index.html">Musiker</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="/artistList.html">Artists</a>
+                <!-- <i class="fa fa-caret-down"></i> -->
+                 </button>
+                     <div class="dropdown-content">
+                     <a href="/artist-page.html">Glass Animals</a>
+                     <a href="/artist-page.html">The Strumbellas</a>
+                     <a href="/artistList.html">and more...</a>
+                    </div>
+            </div> 
         </ul>
     </nav>
 
@@ -72,11 +81,12 @@
 </section>
 
 
-    <footer class="containerFooter">
+<div class="horizontal">
+    <hr>
+</div>
 
-        <div class="horizontal">
-            <hr>
-        </div>
+    <footer class="containerFooter">
+    
 
         <div class="socialMedia">
             <a href="#" class="fa fa-facebook"></a>
@@ -93,11 +103,13 @@
             <input class="submitButton" type="submit" value="SUBSCRIBE">
         </div>
 
-        <div class="copyright">
-            <p>2020 &copy; all rights reserved </p>
-        </div>
     </footer>
+
+    <div class="copyright">
+        <p>2020 &copy; all rights reserved </p>
+    </div>
 </body>
 
 </html>
+
 
