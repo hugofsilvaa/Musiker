@@ -1,3 +1,5 @@
+// JS for buttons to change the text when clicked
+
 const submitNewsletter = document.getElementById('submitNewsletter')
 let count = 0;
 submitNewsletter.addEventListener('click', () => {
@@ -10,5 +12,6 @@ submitNewsletter.addEventListener('click', () => {
 const submitFormButton = document.getElementById('submitFormButton')
 submitFormButton.addEventListener('click', (event) => {
     event.preventDefault();
-    submitFormButton.value = "THANK YOU FOR YOUR MESSAGE!";
+    submitFormButton.value = "THANK YOU FOR YOUR MESSAGE!"
 })
+
