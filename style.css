@@ -461,13 +461,14 @@ input[type="submit"]:hover {
   }
 
   .cards{
-    width: 350px;
+     width: 350px; 
   }
 
   .cards img{
     width: 100%;
     height: 250px;
     transition: 0.8s;
+    object-fit: cover
   }
 
   .cards:hover img{
@@ -485,7 +486,7 @@ input[type="submit"]:hover {
     font-size: 0.8rem;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1024px) {
     .artist-cards{
       flex-wrap: wrap;
       margin-bottom: 90px;
@@ -514,6 +515,16 @@ input[type="submit"]:hover {
 
     .formContainer input[type="submit"]{
       width: 60vw;
+    }
+
+    #teamCard{
+      flex-wrap: wrap;
+      justify-items: center;
+    }
+
+    #teamCard p{
+      width: 300px;
+      margin-top: 100px;
     }
 }
 
@@ -699,4 +710,56 @@ span:nth-child(4) {
 
 .round:hover span:nth-child(4) {
   transform: rotate(-225deg);
+}
+
+/* About us team members selection section  */
+
+#teamSection{
+  margin-top: 150px;
+  text-align: center;
+}
+
+#teamSelect{
+  margin-bottom: 100px; 
+    /* width: 12%; */
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+    appearance: none;
+    text-align: center;
+    border-radius: 20px;
+    padding: 8px;
+    background: #ffffff;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+#teamSelect:hover {
+  background-color:#000000;
+  color: #ffffff;
+  transition: background-color 0.5s;
+}
+
+#teamSelect:focus{
+  outline: 0;
+}
+
+
+#teamCard img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#teamCard p{
+  max-width: 400px;
+  text-align: left;
+}
+
+#teamCard{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 150px;
 }
