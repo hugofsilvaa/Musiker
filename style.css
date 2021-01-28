@@ -178,6 +178,23 @@ q{
   font-size: 2rem;
 }
 
+.card h3{
+  font-size: 2rem;
+  margin-top:10%;
+}
+
+.aboutus{
+  width: 70%;
+  margin: auto;
+  height: auto;
+  padding-bottom: 10%;
+}
+
+.aboutus p {
+  font-size: 1.7rem ;
+  margin-top: 5%;
+}
+
 
 /* Contact form  */
 
@@ -243,15 +260,17 @@ input[type="submit"]:hover {
 }
 
 
-/* @media (max-width: 900px) {
-  align-content: right;
-} */
 
 @media screen and (max-width: 900px) {
 
   .header-home{
     height: 30vh;
   }
+
+  .header-aboutus{
+    height: 15vh;
+  }
+
   .container {
     flex-direction: column;
     justify-content: center;
@@ -266,24 +285,23 @@ input[type="submit"]:hover {
     margin: auto;
   }
 
+
   /* Navigation Bar  */
   
   .navBar {
-    height: 15vh;
+    height: 10vh;
     list-style-type: none;
     text-align: right;
-    padding: 30px;
+    padding-top: 20px;
+    overflow: hidden;
+    
   }
   
-  .navBar li {
+  .navBar a {
     padding: 10px;
     display: inline;
-    float: right;
   }
 
-  .navBar li:first-child{
-    float:left;
-  }
 
   .navBar a {
     cursor: pointer;
@@ -303,6 +321,7 @@ input[type="submit"]:hover {
 .dropdown {
   overflow: hidden;
   float: right;
+  padding-right: 10px;
 }
 
 .dropdown .dropbtn {
@@ -310,7 +329,7 @@ input[type="submit"]:hover {
   border: none;
   outline: none;
   color: white;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: inherit;
   font-family: inherit;
 }
@@ -347,23 +366,28 @@ input[type="submit"]:hover {
 
 
    /* logo  */
+.main-logo{
+  margin-top:20px;
+  margin-left:20px;
+}
+
   .logo{
     display: inline;
     position: relative;
-    font: 2rem Helvetica, sans-serif;
+    font: 3rem Helvetica, sans-serif;
     letter-spacing: -1.5;
-    color: rgba(0,0,255,0.5);
+    color: white;
     overflow: hidden;
+    text-decoration: none;
+    
   }
   
   .logo:after{
     content: "Musiker";
-    position:absolute; left: 3px; top: 2px;
+    position:absolute; left: 2.5px; top: 2.5px;
     color:#044343;
     overflow: hidden;
-    
   }
-  
   
 /* FOOTER  */
 
@@ -719,6 +743,9 @@ span:nth-child(4) {
   text-align: center;
 }
 
+#teamSection h3{
+  font-size: 2rem;
+}
 #teamSelect{
   margin-bottom: 100px; 
     /* width: 12%; */
