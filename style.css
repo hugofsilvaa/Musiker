@@ -114,6 +114,10 @@ hr{
   margin-top: 20px;
 }
 
+.card ul li {
+  list-style: none;
+}
+
 
 .card-quote{
   width: 60%;
