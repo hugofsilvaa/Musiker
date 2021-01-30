@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     background-color:#222222;
     font-family: 'Archivo', sans-serif;
@@ -178,6 +182,23 @@ q{
   font-size: 2rem;
 }
 
+.card h3{
+  font-size: 2rem;
+  margin-top:10%;
+}
+
+.aboutus{
+  width: 70%;
+  margin: auto;
+  height: auto;
+  padding-bottom: 10%;
+}
+
+.aboutus p {
+  font-size: 1.5rem ;
+  margin-top: 5%;
+}
+
 
 /* Contact form  */
 
@@ -243,15 +264,17 @@ input[type="submit"]:hover {
 }
 
 
-/* @media (max-width: 900px) {
-  align-content: right;
-} */
 
 @media screen and (max-width: 900px) {
 
   .header-home{
     height: 30vh;
   }
+
+  .header-aboutus{
+    height: 15vh;
+  }
+
   .container {
     flex-direction: column;
     justify-content: center;
@@ -266,24 +289,23 @@ input[type="submit"]:hover {
     margin: auto;
   }
 
+
   /* Navigation Bar  */
   
   .navBar {
-    height: 15vh;
+    height: 10vh;
     list-style-type: none;
     text-align: right;
-    padding: 30px;
+    padding-top: 20px;
+    overflow: hidden;
+    
   }
   
-  .navBar li {
+  .navBar a {
     padding: 10px;
     display: inline;
-    float: right;
   }
 
-  .navBar li:first-child{
-    float:left;
-  }
 
   .navBar a {
     cursor: pointer;
@@ -303,6 +325,7 @@ input[type="submit"]:hover {
 .dropdown {
   overflow: hidden;
   float: right;
+  padding-right: 10px;
 }
 
 .dropdown .dropbtn {
@@ -310,7 +333,7 @@ input[type="submit"]:hover {
   border: none;
   outline: none;
   color: white;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: inherit;
   font-family: inherit;
 }
@@ -347,23 +370,28 @@ input[type="submit"]:hover {
 
 
    /* logo  */
+.main-logo{
+  margin-top:20px;
+  margin-left:20px;
+}
+
   .logo{
     display: inline;
     position: relative;
-    font: 2rem Helvetica, sans-serif;
+    font: 3rem Helvetica, sans-serif;
     letter-spacing: -1.5;
-    color: rgba(0,0,255,0.5);
+    color: white;
     overflow: hidden;
+    text-decoration: none;
+    
   }
   
   .logo:after{
     content: "Musiker";
-    position:absolute; left: 3px; top: 2px;
+    position:absolute; left: 2.5px; top: 2.5px;
     color:#044343;
     overflow: hidden;
-    
   }
-  
   
 /* FOOTER  */
 
@@ -461,26 +489,38 @@ input[type="submit"]:hover {
   }
 
   .cards{
-    width: 350px;
+     width: 350px; 
   }
 
   .cards img{
     width: 100%;
     height: 250px;
+    transition: 0.8s;
+    object-fit: cover
   }
 
-
-/* Artist List  */
+  .cards:hover img{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
+	  z-index: 9;
+  }
 
   .cards p{
     margin-top: 20px;
-    color:#ffffff;
+    font-size: 1.4rem;
+    text-align: justify;
   }
 
-  @media screen and (max-width: 900px) {
+  .credits{
+    margin-top: 100px;
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 1024px) {
     .artist-cards{
       flex-wrap: wrap;
       margin-bottom: 90px;
+      padding: 0 30px ;
     }
     .cards{
     margin-bottom: 50px;
@@ -506,6 +546,16 @@ input[type="submit"]:hover {
 
     .formContainer input[type="submit"]{
       width: 60vw;
+    }
+
+    #teamCard{
+      flex-wrap: wrap;
+      justify-items: center;
+    }
+
+    #teamCard p{
+      width: 300px;
+      margin-top: 100px;
     }
 }
 
@@ -617,3 +667,134 @@ input[type="submit"]:hover {
   background-color:#000000;
   color: #ffffff;
 } 
+
+/* Scroll down style */
+
+.center-con {
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.round {
+  position: relative;
+  border: 3px solid #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+span {
+  z-index: 999;
+  height: 3px;
+  margin:1px;
+  width: 30px;
+  background: #fff;
+  transition: 0.4s ease;
+}
+
+span:first-child {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 25%;
+  bottom: 35%;
+}
+
+span:nth-child(2) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  bottom: 35%;
+}
+
+span:nth-child(3) {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 25%;
+  bottom: 54%;
+}
+
+span:nth-child(4) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+  transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+  transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+  transform: rotate(-225deg);
+}
+
+/* About us team members selection section  */
+
+#teamSection{
+  margin-top: 150px;
+  text-align: center;
+}
+
+#teamSection h3{
+  font-size: 2rem;
+}
+#teamSelect{
+  margin-bottom: 100px; 
+    /* width: 12%; */
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+    appearance: none;
+    text-align: center;
+    border-radius: 20px;
+    padding: 8px;
+    background: #ffffff;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+#teamSelect:hover {
+  background-color:#000000;
+  color: #ffffff;
+  transition: background-color 0.5s;
+}
+
+#teamSelect:focus{
+  outline: 0;
+}
+
+
+#teamCard img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#teamCard p{
+  max-width: 400px;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+#teamCard{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 150px;
+}
