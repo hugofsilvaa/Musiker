@@ -191,7 +191,7 @@ q{
 }
 
 .aboutus p {
-  font-size: 1.7rem ;
+  font-size: 1.5rem ;
   margin-top: 5%;
 }
 
@@ -503,6 +503,8 @@ input[type="submit"]:hover {
 
   .cards p{
     margin-top: 20px;
+    font-size: 1.4rem;
+    text-align: justify;
   }
 
   .credits{
@@ -514,6 +516,7 @@ input[type="submit"]:hover {
     .artist-cards{
       flex-wrap: wrap;
       margin-bottom: 90px;
+      padding: 0 30px ;
     }
     .cards{
     margin-bottom: 50px;
@@ -781,7 +784,8 @@ span:nth-child(4) {
 
 #teamCard p{
   max-width: 400px;
-  text-align: left;
+  text-align: justify;
+  font-size: 1.4rem;
 }
 
 #teamCard{
